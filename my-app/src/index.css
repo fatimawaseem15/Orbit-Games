@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #0f101b;
+}
+
+.container{
+    width: 384px;
+    top: 209px;
+    left: 145px;
+    gap: 0px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 18%;
+}
+.sub_container{
+    font-size: 32px;
+}
