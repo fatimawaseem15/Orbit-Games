@@ -4,7 +4,7 @@ const Popup = ({ imageSrc, onClose }) => {
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50">
       <div className="bg-black bg-opacity-50 absolute inset-0"></div>
-      <div className="relative bg-white rounded-lg shadow-lg max-w-screen-lg w-70vw md:w-auto h-80vh md:h-20vh overflow-hidden m-7">
+      <div className="relative bg-white rounded-lg shadow-lg max-w-screen-lg w-full md:max-w-3xl h-80vh md:h-20vh overflow-hidden m-7">
         <button
           className="absolute top-4 right-4 text-white hover:text-gray-500 w-10 h-10 flex items-center justify-center"
           onClick={onClose}
