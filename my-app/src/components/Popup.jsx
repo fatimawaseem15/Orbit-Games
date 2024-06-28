@@ -4,7 +4,7 @@ const Popup = ({ imageSrc, onClose }) => {
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50">
       <div className="bg-black bg-opacity-50 absolute inset-0"></div>
-      <div className="relative bg-white rounded-lg shadow-lg max-w-screen-lg w-70vw h-80vh md:h-20vh overflow-hidden m-7">
+      <div className="relative bg-white rounded-lg shadow-lg max-w-screen-lg w-70vw md:w-auto h-80vh md:h-20vh overflow-hidden m-7">
         <button
           className="absolute top-4 right-4 text-white hover:text-gray-500 w-10 h-10 flex items-center justify-center"
           onClick={onClose}
@@ -17,18 +17,18 @@ const Popup = ({ imageSrc, onClose }) => {
           </div>
           <div className="md:w-2/3 p-6 m-4 text-white flex flex-col justify-between">
             <div>
-              <h2 className="text-xl font-bold mb-2" style={{ fontFamily: 'Michroma, sans-serif', fontSize: 24 }}>
+              <h2 className="text-xl font-bold mb-2" style={{ fontFamily: 'Michroma, sans-serif', fontSize: '1.5rem' }}>
                 Valorant
               </h2>
               <p className="text-gray-700 mb-4">
                 Valorant is a fast-paced, tactical first-person shooter where players engage in strategic team-based combat using a diverse cast of heroes and their unique abilities.
               </p>
               <div className="mb-4">
-                <span className="font-bold bg-orange text-white px-2 py-1 rounded" style={{ fontFamily: 'Poppins, sans-serif', fontSize: 16 }}>Developer:</span>
-                <span className="ml-2 text-white" style={{ fontFamily: 'Poppins, sans-serif', fontSize: 16, backgroundColor: '#FF7136', padding: '0.5rem', borderRadius: '0.25rem' }}>Riot Games</span>
+                <span className="font-bold bg-orange text-white px-2 py-1 rounded text-xs md:text-base" style={{ fontFamily: 'Poppins, sans-serif' }}>Developer:</span>
+                <span className="ml-2 text-white bg-[#FF7136] px-2 py-1 rounded text-xs md:text-base" style={{ fontFamily: 'Poppins, sans-serif' }}>Riot Games</span>
               </div>
               <div className="mb-2">
-                <span className="font-bold">Status:</span> <span className="ml-14 text-white" style={{ fontFamily: 'Poppins, sans-serif', fontSize: 16, backgroundColor: '#0E101C', padding: '0.5rem', borderRadius: '0.25rem' }}>Launched</span>
+                <span className="font-bold text-xs md:text-base">Status:</span> <span className="ml-2 text-white bg-[#0E101C] px-2 py-1 rounded text-xs md:text-base" style={{ fontFamily: 'Poppins, sans-serif' }}>Launched</span>
               </div>
             </div>
             <div className="text-center md:text-right">
